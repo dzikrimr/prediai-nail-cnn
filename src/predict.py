@@ -15,7 +15,8 @@ img_array = np.expand_dims(img_array, axis=0)
 
 # Prediksi
 prediction = model.predict(img_array)[0][0]
-label = "diabet" if prediction >= 0.5 else "non_diabet"
+
+label = "prediabet" if prediction >= 0.5 else "non_diabet"
 confidence = prediction if prediction >= 0.5 else 1 - prediction
 
 print(f"Prediksi: {label} ({confidence*100:.2f}% yakin)")

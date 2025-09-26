@@ -1,8 +1,5 @@
 # Virtual environment
 venv/
-ENV/
-env/
-venv310/
 
 # Python cache
 __pycache__/
@@ -16,13 +13,6 @@ __pycache__/
 # OS-generated files
 .DS_Store
 Thumbs.db
-
-# Model & training outputs
-models/
-*.h5
-*.hdf5
-*.ckpt
-*.pth
 
 # Dataset besar
 data/
