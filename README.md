@@ -1,4 +1,7 @@
+<div align="center">
+
 # AI Diabetes Detection Through Nail Analysis
+</div>
 
 <p align="center">
 <strong>Deep Learning-based System for Early Diabetes Risk Detection Using Nail Images</strong>
