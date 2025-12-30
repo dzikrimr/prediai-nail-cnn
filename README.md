@@ -178,15 +178,55 @@ data/
 
 ## 📈 Training Results Visualization
 
+### Image Viewing Troubleshooting
+
+If images don't display properly in this README:
+
+#### Option 1: Direct File Access
+- Navigate to the `runs/train/kuku/` and `runs/train/lidah/` directories
+- All training result images are stored there
+
+#### Option 2: GitHub Web Interface
+- Click on the `runs/train/` folder in the repository
+- Browse the `kuku/` and `lidah/` subdirectories
+- Click on any `.png` or `.jpg` file to view it
+
+#### Option 3: Clone and View Locally
+- Clone the repository to your local machine
+- Open the README.md file in a markdown viewer that supports local image paths
+- Or open the image files directly in any image viewer
+
+#### Expected Image Locations:
+```
+runs/train/kuku/
+├── results.png                 # Training progress
+├── confusion_matrix.png        # Model performance
+├── confusion_matrix_normalized.png
+├── BoxF1_curve.png            # F1 score curves
+├── BoxP_curve.png             # Precision curves
+├── BoxPR_curve.png            # Precision-Recall curves
+├── BoxR_curve.png             # Recall curves
+├── labels.jpg                 # Label distribution
+├── train_batch0.jpg           # Training samples
+└── val_batch0_labels.jpg      # Validation samples
+
+runs/train/lidah/
+├── [Same structure as above]
+```
+
 ### Performance Curves
 
 The project includes comprehensive visualization of training metrics:
+
+**Note**: All images should display above. If not visible, see troubleshooting section above.
 
 #### Nail Model Training Results
 ![Nail Model Results](runs/train/kuku/results.png)
 
 #### Tongue Model Training Results  
 ![Tongue Model Results](runs/train/lidah/results.png)
+
+*Note: If images don't display, please check that the repository structure matches the expected paths above.*
 
 ### Confusion Matrices
 
